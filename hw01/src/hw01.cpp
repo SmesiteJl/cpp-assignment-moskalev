@@ -1,4 +1,5 @@
 #include <hw01.h>
+#include <cmath>
 
 bool isPrime(int num) {
     if (num <= 1) {
@@ -32,7 +33,6 @@ int hw01(int start, int end)
     }
 
     int sum = 0;
-
     for (int i = start; i <= end; i++) {
         if (isPrime(i)) {
             sum += sumOfDigits(i);
